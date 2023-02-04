@@ -10,6 +10,9 @@ public class mapGeneration : MonoBehaviour
     [SerializeField] GameObject[] ScenesSingleUp = new GameObject[10];
     [SerializeField] GameObject[] ScenesSingleCenter = new GameObject[10];
     [SerializeField] GameObject[] ScenesSingleDown = new GameObject[10];
+    [SerializeField] GameObject[] ScenesLargeDown = new GameObject[10];
+    [SerializeField] GameObject[] ScenesLargeUp = new GameObject[10];
+    [SerializeField] GameObject[] ScenesLargeCenter = new GameObject[10];
     [SerializeField] GameObject[] ScenesDoubleUp = new GameObject[10];
     [SerializeField] GameObject[] ScenesDoubleCenter = new GameObject[10];
     [SerializeField] GameObject[] ScenesDoubleDown = new GameObject[10];
