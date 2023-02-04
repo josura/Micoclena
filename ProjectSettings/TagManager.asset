@@ -3,21 +3,31 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - NPC
+  - CapManager
+  - DetectionCollider
+  - BossSpawnpoint
+  - BossScene
+  - MidBossScene
+  - MidBossSpawnpoint
+  - NormalScene
+  - normalSpawnpoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - terrain
   - Water
   - UI
   - 
   - 
+  - player
   - 
   - 
   - 
-  - 
-  - 
+  - enemy
   - 
   - 
   - 
