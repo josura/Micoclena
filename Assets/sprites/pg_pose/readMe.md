@@ -1,0 +1,1 @@
+pg quando è fermo
