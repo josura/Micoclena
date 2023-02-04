@@ -5,13 +5,14 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour, IDamageable<int>, IKIllable
+public class EnemyManager : MonoBehaviour, IDamageable<int>, IKIllable
 {
-    private static PlayerManager _instance;
+    private static EnemyManager _instance;
     public delegate void loadDelegate();
     public loadDelegate loadDel;
 
-    public static PlayerManager Instance
+
+    public static EnemyManager Instance
     {
         get { return _instance; }
     }
@@ -31,6 +32,8 @@ public class PlayerManager : MonoBehaviour, IDamageable<int>, IKIllable
         //loadStats();
 
     }
+
+    
 
 
     //private void Start()
@@ -57,17 +60,17 @@ public class PlayerManager : MonoBehaviour, IDamageable<int>, IKIllable
     //    public float[] position;
     //}
 
-    [SerializeField] public playerData stats = new playerData(10,0,2,2,0,0,new Vector2(0,0));
+    //[SerializeField] public PlayerStats stats = new PlayerStats();
 
-    public int getHealth()
-    {
-        return stats.health;
-    }
+    //public int getHealth()
+    //{
+    //    return stats.health;
+    //}
 
-    public int getMaxHealth()
-    {
-        return stats.maxhealth;
-    }
+    //public int getMaxHealth()
+    //{
+    //    return stats.maxhealth;
+    //}
 
     //public void saveStats()
     //{
@@ -148,5 +151,6 @@ public class PlayerManager : MonoBehaviour, IDamageable<int>, IKIllable
     //{
     //    stats.health = stats.maxhealth;
     //}
+
 
 }

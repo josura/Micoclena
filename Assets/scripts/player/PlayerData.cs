@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class playerData{
     public int health;
-    public int coins;
-    public int shooterBulletLevel;
-    public int shooterLaserLevel;
-    public int shooterRocketLevel;
+    public int maxhealth;
+    public float speed= 0;
+    public float strenght= 0;
+    public float toxic= 0;
+    public float ranged= 0;
+    public int currentCapLevel = 0;
     public float[] position;
 
-    public playerData(int _health, int _coins, int bulLevel, int lasLevel, int rocLevel, Vector3 position)
+    public playerData(int _health, int capLevel, float initialStrenght, float initialSpeed, float initialToxic, float initialRanged, Vector2 position)
     {
         health = (_health);
-        coins = _coins;  // to change to mushrooms
-        shooterBulletLevel = bulLevel;
-        shooterLaserLevel = lasLevel;
-        shooterRocketLevel = rocLevel;
+        currentCapLevel = capLevel;  // to change to mushrooms
+        strenght = initialStrenght;
+        speed = initialSpeed;
+        toxic = initialToxic;
+        ranged = initialRanged;
         //position = new float[3];
     }
 }
