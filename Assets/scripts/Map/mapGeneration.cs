@@ -20,6 +20,7 @@ public class mapGeneration : MonoBehaviour
     [SerializeField] GameObject[] ScenesDoubleCenter = new GameObject[10];
     [SerializeField] GameObject[] ScenesDoubleDown = new GameObject[10];
     [SerializeField] GameObject[] boulder= new GameObject[3];
+    [SerializeField] GameObject[] finalScene = new GameObject[2];
 
     GameObject map;
 
@@ -369,6 +370,49 @@ public class mapGeneration : MonoBehaviour
                     }
                 }
                  
+            }
+        }
+        if (formedScenes.Count > 0)
+        {
+            Tuple<string, GameObject> oldScene = formedScenes.Dequeue();
+            if (oldScene.Item1.Contains("boulder"))
+            {
+                float width = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.x;
+                float height = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.y;
+                Vector3 newCoordinates = new(oldScene.Item2.transform.position.x + width / 2, oldScene.Item2.transform.position.y, 0);
+
+                GameObject toInstantiate = boulder[0];
+                GameObject scene = Instantiate(toInstantiate, newCoordinates, oldScene.Item2.transform.rotation);
+            }
+            else
+            {
+                if (oldScene.Item1 == "double")
+                {
+                    float width = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.x;
+                    float height = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.y;
+                    Vector3 newCoordinatesupper = new(oldScene.Item2.transform.position.x + width, oldScene.Item2.transform.position.y + height / 2, 0);
+                    Vector3 newCoordinateslower = new(oldScene.Item2.transform.position.x + width, oldScene.Item2.transform.position.y - height / 2, 0);
+
+
+                    GameObject toInstantiate = finalScene[0];
+                    GameObject scene1 = Instantiate(toInstantiate, newCoordinatesupper, oldScene.Item2.transform.rotation);
+                    GameObject scene2 = Instantiate(toInstantiate, newCoordinateslower, oldScene.Item2.transform.rotation);
+
+                    scene1.transform.parent = map.transform;
+                    scene2.transform.parent = map.transform;
+                }
+                else
+                {
+                    float width = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.x;
+                    float height = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.y;
+                    Vector3 newCoordinates = new(oldScene.Item2.transform.position.x + width, oldScene.Item2.transform.position.y, 0);
+
+
+                    GameObject toInstantiate = finalScene[0];
+                    GameObject scene1 = Instantiate(toInstantiate, newCoordinates, oldScene.Item2.transform.rotation);
+
+                    scene1.transform.parent = map.transform;
+                }
             }
         }
     }
