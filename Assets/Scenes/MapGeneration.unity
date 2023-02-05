@@ -167,6 +167,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc359c5161514241a95db7d484d3ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC:
+  - {fileID: 3178341429978248810, guid: 0d67db759761f9b4683728549a9c4996, type: 3}
+  Enemies:
+  - {fileID: 2521986240047911021, guid: 1cda01e8c225a0e41b6136ab89f8dfa0, type: 3}
+  MidBoss:
+  - {fileID: 3859337629413521888, guid: abc06b01a7e4a8943ae6349f7e7bf22a, type: 3}
+  - {fileID: 1141420041803989150, guid: 96f16f41eb048bf428d85c09ac76a258, type: 3}
+  - {fileID: 785422788811480720, guid: ebecaebccd455dd46866808ccc22e7c2, type: 3}
+  - {fileID: 1263439828960212179, guid: 9de69e062f42a224f8d4960080cf1edb, type: 3}
+  - {fileID: 5349586500031010240, guid: dace41e18a9c26a4bba7bbc4c7ad657e, type: 3}
+  finalBoss:
+  - {fileID: 2009211159750548101, guid: b3772047dd72a6942902e3d8c4253961, type: 3}
+  boss: {fileID: 0}
+  midbossArray: []
+  enemiesArray: []
+  NPCArray: []
+  NPCListLength: 0
+  enemyListLength: 0
+  midbossListLength: 0
+  timeToSpawn: 0
 --- !u!1 &360096053
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,7 +296,6 @@ MonoBehaviour:
   - {fileID: 94877841127138046, guid: b891bad3a3c04e04e92c91cf8795dcdb, type: 3}
   finalScene:
   - {fileID: 3359771462665786759, guid: 3327fe32aefedb34e88e2c8c59b2883a, type: 3}
-  - {fileID: 0}
 --- !u!4 &524963539
 Transform:
   m_ObjectHideFlags: 0
@@ -499,26 +518,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1657370683, guid: 714b60531f4147f4badfd3d675d23cfa, type: 3}
-      propertyPath: m_Name
-      value: sprite
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657370684, guid: 714b60531f4147f4badfd3d675d23cfa, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5f81436fc43180c4abc464c213076f69, type: 2}
-    - target: {fileID: 1657370684, guid: 714b60531f4147f4badfd3d675d23cfa, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657370686, guid: 714b60531f4147f4badfd3d675d23cfa, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6016055041289162448, guid: 714b60531f4147f4badfd3d675d23cfa, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6989163473121301833, guid: 714b60531f4147f4badfd3d675d23cfa, type: 3}
       propertyPath: m_Name
       value: Player

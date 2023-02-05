@@ -43,11 +43,6 @@ public class mapGeneration : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);   //to keep the singleton between scenes
         //spawnPoint = GameObject.Find("spawnpoints").transform.Cast<Transform>().ToArray();
 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         map = GameObject.FindGameObjectsWithTag("mappa")[0];
         GenerateMap();
     }
@@ -57,6 +52,11 @@ public class mapGeneration : MonoBehaviour
         System.Random rnd = new System.Random();
         GameObject start = Instantiate(ScenesDoubleCenter[2], new Vector3(0,0,0), map.transform.rotation);
         start.transform.parent = map.transform;
+        Vector3 newCoordinatesBoulder = new(start.transform.position.x - start.GetComponent<SpriteRenderer>().bounds.size.x*0.66f, start.transform.position.y, 0);
+
+        GameObject boulderInit = Instantiate(boulder[0], newCoordinatesBoulder, start.transform.rotation);
+        boulderInit.transform.parent = map.transform;
+
         Queue<Tuple<string, GameObject>> formedScenes = new Queue<Tuple<string, GameObject>>();
         formedScenes.Enqueue(new Tuple<string, GameObject>("double", start));
         int remainingMidBossScenes = MAX_MIDBOSS_SCENES;
@@ -318,6 +318,7 @@ public class mapGeneration : MonoBehaviour
 
                     GameObject toInstantiate = boulder[0];
                     GameObject scene = Instantiate(toInstantiate, newCoordinates, oldScene.Item2.transform.rotation);
+                    scene.transform.parent = map.transform;
                 }
                 else {
                     if (remainingMidBossScenes > 0 && sceneRand < midBossThreshold)
@@ -379,10 +380,11 @@ public class mapGeneration : MonoBehaviour
             {
                 float width = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.x;
                 float height = oldScene.Item2.GetComponent<SpriteRenderer>().bounds.size.y;
-                Vector3 newCoordinates = new(oldScene.Item2.transform.position.x + width / 2, oldScene.Item2.transform.position.y, 0);
+                Vector3 newCoordinates = new(oldScene.Item2.transform.position.x + width *0.55f, oldScene.Item2.transform.position.y, 0);
 
                 GameObject toInstantiate = boulder[0];
                 GameObject scene = Instantiate(toInstantiate, newCoordinates, oldScene.Item2.transform.rotation);
+                scene.transform.parent = map.transform;
             }
             else
             {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b2d38c9cb8114364fa8693f62a37a5a8
+guid: a48085bed788be1429d14d8fe27a2b75
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,112 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Fung tse tunz_Spritesheet Resize_0
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 778
-        width: 522
-        height: 577
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a813ae4f4648a2541ae7f0954831581b
-      internalID: 69663559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fung tse tunz_Spritesheet Resize_1
-      rect:
-        serializedVersion: 2
-        x: 721
-        y: 778
-        width: 521
-        height: 584
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35feacb1e69547c4b82f6ef7a2287605
-      internalID: 1515276188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fung tse tunz_Spritesheet Resize_2
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 101
-        width: 521
-        height: 573
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ca4c87eba7481b46854b7dd82372f15
-      internalID: 126672698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fung tse tunz_Spritesheet Resize_3
-      rect:
-        serializedVersion: 2
-        x: 703
-        y: 102
-        width: 521
-        height: 588
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21e9ca5ba6c3b0d4a8e2d618c9154299
-      internalID: -1123107554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fung tse tunz_Spritesheet Resize_4
-      rect:
-        serializedVersion: 2
-        x: 1291
-        y: 102
-        width: 521
-        height: 604
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 724987fb208144542b7e78e2612b785a
-      internalID: 1100928445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -231,12 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Fung tse tunz_Spritesheet Resize_4: 1100928445
-      Fung tse tunz_Spritesheet Resize_1: 1515276188
-      Fung tse tunz_Spritesheet Resize_3: -1123107554
-      Fung tse tunz_Spritesheet Resize_0: 69663559
-      Fung tse tunz_Spritesheet Resize_2: 126672698
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
