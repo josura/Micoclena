@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Collider2D cd2d;
 
     private float movementSpeed = 0.5f;
-    private float jumpForce = 2f;
+    private float jumpForce = 3.2f;
     private bool isJumping = true;
     private bool onGround = false;
     float moveHorizontal = 0;
